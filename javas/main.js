@@ -24,7 +24,26 @@ const images = [
     }
 ];
 
-console.log (images)
 
 
+images.forEach(function (images) {
+    console.log(images)
+    const divEl = document.createElement("div");
+    arouselContainerEl.append(divEl);
+
+    const imgEl = document.createElement("img.src");
+    imgEl.classList.add("d-block");
+    imgEl.innerHTML = images.image;
+    arouselContainerEl.append(imgEl);
+
+
+    const h3El = document.createElement("h3")
+    h3El.innerHTML = images.title;
+    arouselContainerEl.append(h3El);
+
+    const pEl = document.createElement("p");
+    pEl.innerHTML = images.text;
+    arouselContainerEl.append(pEl);
+
+});
 
